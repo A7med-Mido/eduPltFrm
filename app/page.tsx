@@ -1,12 +1,19 @@
+"use client"
+import AboutSection from "@/components/sections/AboutSection"
+import FooterSection from "@/components/sections/FooterSection"
+import HeroSection from "@/components/sections/HeroSection"
+import LatestCoursesSection from "@/components/sections/LatestCoursesSection"
 
 
 export default function Home() {
-  return (
-    <div className="absolute<D-§> top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-      <h1 className="text-xxl text-red-300">
-        me and you in another life were beautiful.
-      </h1>
 
+
+  return (
+    <div className="w-screen flex flex-col justify-center items-center">
+      <HeroSection />
+      <LatestCoursesSection />
+      <AboutSection />
+      <FooterSection />
     </div>
-  );
+  )
 }
